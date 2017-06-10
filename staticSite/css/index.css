@@ -1,0 +1,191 @@
+
+body {
+  color: #222;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* layout styles */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+
+.inner-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.outer-content-column {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+
+.outer-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* element styles */
+.banner {
+  height: 100%;
+  width: 33%;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 60px 0 60px;
+  width: auto;
+}
+
+.footer {
+  background-color: #66CCCC;
+  padding: 20px 60px;
+  width: 100%;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.inner-content {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+.statIntro {
+  border-right-color: #CCCCCC;
+  border-right-style: solid;
+  border-right-width: 1px;
+  font-weight: bold;
+  margin-right: 30px;
+  padding: 30px 30px 20px 0;
+  width: 33%;
+}
+
+/* text styles */
+.fontLarge {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.fontLight {
+  font-weight: lighter;
+}
+
+.fontSmall {
+  font-size: 12px;
+  margin: 30px 0;
+}
+
+.gray {
+  color: #CCCCCC;
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.success {
+  background-color: #66CCCC;
+  display: inline-block;
+  padding: 4px 10px;
+}
+.success.p {
+  margin: 0;
+}
+
+.teal {
+  color: #66CCCC;
+}
+
+.white {
+  color: white;
+  margin: 0;
+}
+
+/* media queries */
+@media screen and (max-width:667px) {
+  .banner {
+    display: none;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .inner-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .outer-row {
+    flex-direction: column;
+  }
+
+  .statIntro {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .banner {
+    height: 40%;
+    width: 100%;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .content-column {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 30px 0 30px 30px;
+    width: auto;
+  }
+
+  .inner-row {
+    margin-top: 30px;
+  }
+
+  .outer-content-column {
+    width: 100%;
+  }
+
+  .outer-row {
+    flex-direction: column;
+  }
+}
